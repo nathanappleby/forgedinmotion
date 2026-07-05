@@ -24,4 +24,264 @@
 html{scroll-behavior:smooth}
 body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;font-weight:400;line-height:1.7;overflow-x:hidden}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);padding:0 6%}
-.nav-i
+.nav-inner{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--white);letter-spacing:2px;text-decoration:none}
+.nav-logo span{color:var(--orange)}
+.nav-tag{font-size:0.68rem;font-weight:600;color:var(--gray);letter-spacing:3px;text-transform:uppercase}
+.nav-cta{background:var(--orange);color:#FFFFFF;font-family:'Barlow',sans-serif;font-weight:600;font-size:0.78rem;letter-spacing:2px;text-transform:uppercase;padding:11px 22px;text-decoration:none;transition:background 0.2s}
+.nav-cta:hover{background:var(--orange-light)}
+section{padding:130px 6%}
+.container{max-width:1120px;margin:0 auto}
+.hero{padding-top:170px;padding-bottom:140px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at top right,rgba(192,88,32,0.06) 0%,transparent 55%);pointer-events:none}
+.hero-eyebrow{font-size:0.72rem;font-weight:600;color:var(--orange);letter-spacing:5px;text-transform:uppercase;margin-bottom:28px}
+.hero-headline{font-family:'Bebas Neue',sans-serif;font-size:clamp(3.5rem,9vw,8rem);line-height:0.94;color:var(--white);margin-bottom:36px;max-width:900px}
+.hero-headline span{color:var(--orange)}
+.hero-sub{font-size:clamp(1.05rem,1.8vw,1.3rem);color:var(--light-gray);max-width:620px;margin-bottom:56px;font-weight:300;line-height:1.7}
+.hero-sub strong{color:var(--white);font-weight:600}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:24px}
+.btn-primary{display:inline-block;background:var(--orange);color:#FFFFFF;font-family:'Barlow',sans-serif;font-weight:600;font-size:0.85rem;letter-spacing:2px;text-transform:uppercase;padding:19px 40px;text-decoration:none;transition:background 0.2s}
+.btn-primary:hover{background:var(--orange-light)}
+.divider{height:1px;background:var(--border);margin:0 6%}
+.section-eyebrow{font-size:0.72rem;font-weight:600;color:var(--orange);letter-spacing:5px;text-transform:uppercase;margin-bottom:24px}
+.section-h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.3rem,4.5vw,4.2rem);color:var(--white);line-height:1.02;margin-bottom:28px}
+.section-h2 span{color:var(--orange)}
+.problem{background:var(--dark)}
+.problem-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:90px;align-items:start}
+.problem-text p{font-size:1.1rem;color:var(--light-gray);line-height:1.85;margin-bottom:22px;font-weight:300;max-width:520px}
+.problem-text p strong{color:var(--white);font-weight:600}
+.problem-quote{background:var(--card);border-left:3px solid var(--orange);padding:40px;margin-top:8px}
+.problem-quote p{font-size:1.15rem;color:var(--white);font-style:italic;line-height:1.7;font-weight:300;margin-bottom:20px}
+.problem-quote cite{display:block;font-style:normal;font-size:0.78rem;font-weight:600;color:var(--orange);letter-spacing:2px;text-transform:uppercase}
+.solution-header{margin-bottom:80px;max-width:700px}
+.solution-header p.section-sub{font-size:1.1rem;color:var(--light-gray);font-weight:300;line-height:1.8}
+.phase-list{display:flex;flex-direction:column}
+.phase-row{display:grid;grid-template-columns:100px 1fr;gap:32px;padding:36px 0;border-top:1px solid var(--border)}
+.phase-row:last-child{border-bottom:1px solid var(--border)}
+.phase-num{font-family:'Bebas Neue',sans-serif;font-size:2.6rem;color:var(--orange);line-height:1}
+.phase-title{font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.phase-body{font-size:1.02rem;color:var(--light-gray);line-height:1.75;font-weight:300;max-width:600px}
+.about{background:var(--dark)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:start}
+.about-text p{font-size:1.08rem;color:var(--light-gray);line-height:1.85;margin-bottom:22px;font-weight:300}
+.credential-list{display:flex;flex-direction:column;gap:0}
+.credential{padding:20px 0;border-top:1px solid var(--border);font-size:0.98rem;color:var(--light-gray);font-weight:300;display:flex;gap:16px}
+.credential:last-child{border-bottom:1px solid var(--border)}
+.credential-mark{color:var(--orange);flex-shrink:0}
+.philosophy{text-align:center}
+.philosophy .section-eyebrow{margin-bottom:24px}
+.philosophy h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.8rem,6vw,5.5rem);color:var(--white);margin-bottom:48px;line-height:1}
+.philosophy-lines{max-width:640px;margin:0 auto}
+.philosophy-lines p{font-size:1.15rem;color:var(--light-gray);line-height:1.9;font-weight:300;margin-bottom:18px}
+.philosophy-lines p:last-child{color:var(--white);font-weight:500;margin-top:32px}
+.guarantee{background:var(--dark);text-align:center}
+.guarantee-box{max-width:680px;margin:0 auto;border:1px solid var(--border);padding:56px}
+.guarantee-box p{font-size:1.08rem;color:var(--light-gray);line-height:1.85;font-weight:300;margin-bottom:18px}
+.guarantee-box p:last-child{margin-bottom:0;color:var(--orange);font-weight:600;font-size:1rem}
+.cta-section{text-align:center}
+.cta-section p.section-sub{font-size:1.1rem;color:var(--light-gray);max-width:560px;margin:0 auto 48px;font-weight:300;line-height:1.75}
+.cta-buttons{display:flex;flex-direction:column;align-items:center;gap:18px}
+.btn-note{font-size:0.75rem;color:var(--gray);letter-spacing:1px}
+footer{background:var(--dark);border-top:1px solid var(--border);padding:56px 6%;text-align:center}
+.footer-brand{font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--white);letter-spacing:3px;margin-bottom:8px}
+.footer-brand span{color:var(--orange)}
+.footer-tag{font-size:0.75rem;color:var(--gray);letter-spacing:3px;text-transform:uppercase;margin-bottom:28px}
+.footer-links{display:flex;justify-content:center;gap:36px;margin-bottom:28px}
+.footer-links a{font-size:0.8rem;color:var(--gray);text-decoration:none;letter-spacing:1px;text-transform:uppercase;transition:color 0.2s}
+.footer-links a:hover{color:var(--orange)}
+.footer-legal{font-size:0.72rem;color:var(--gray);line-height:1.7;max-width:600px;margin:0 auto}
+@media(max-width:768px){
+  section{padding:90px 6%}
+  .problem-grid,.about-grid{grid-template-columns:1fr;gap:56px}
+  .phase-row{grid-template-columns:60px 1fr;gap:20px}
+  .nav-tag{display:none}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">FORGED IN <span>MOTION</span></a>
+    <span class="nav-tag">Stay In The Fight</span>
+    <a href="https://calendly.com/nathanappleby/pain-strategy-call" target="_blank" class="nav-cta">Book Free Call</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <p class="hero-eyebrow">Premium Cash-Pay Physical Therapy · In-Person &amp; Telehealth</p>
+    <h1 class="hero-headline">Stay In<br>The <span>Fight.</span></h1>
+    <p class="hero-sub">Helping driven people return to the active life they love through premium one-on-one physical therapy. We don't just treat pain. We get you back to benching heavy, running trails, and living the life you refuse to give up.</p>
+    <div class="hero-actions">
+      <a href="https://calendly.com/nathanappleby/pain-strategy-call" target="_blank" class="btn-primary">Book a Free Clarity Call</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="problem">
+  <div class="container">
+    <div class="problem-grid">
+      <div class="problem-text">
+        <p class="section-eyebrow">The Problem</p>
+        <h2 class="section-h2">It was never really<br>about the <span>pain.</span></h2>
+        <p>You didn't come to physical therapy because your shoulder hurts. You came because you can't bench press. Because you can't get through a run without it flaring up. Because you had to sit out of the game with your kid instead of throwing the ball around.</p>
+        <p>Pain is just the symptom. <strong>What it's actually costing you is the thing you love doing.</strong> That's the problem worth solving — and most treatment plans never even address it.</p>
+        <p>Pain often creates more uncertainty and fear than it does actual physical limitation. Once that fear is gone, most people are far more capable than they think.</p>
+      </div>
+      <div class="problem-quote">
+        <p>"Nobody comes to me because they want to 'get out of pain.' They come because they want back to their sport, their gym, their kids. I build every plan around that — not around the injury in isolation."</p>
+        — Nathan Appleby, PT, DPT · Founder, Forged In Motion
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="different">
+  <div class="container">
+    <div class="solution-header">
+      <p class="section-eyebrow">Why This Is Different</p>
+      <h2 class="section-h2">This isn't traditional<br>physical <span>therapy.</span></h2>
+      <p class="section-sub">Traditional PT is built around the clinic's schedule and a generic protocol. This is built around getting you back to your sport, as fast as it's actually safe to do it.</p>
+    </div>
+    <div class="phase-list">
+      <div class="phase-row">
+        <div class="phase-num">×</div>
+        <div>
+          <div class="phase-title">Traditional PT</div>
+          <p class="phase-body">"Rest it and see how it feels." Generic exercise handouts that have nothing to do with your sport. Twice a week for six to eight weeks, whether you need it or not.</p>
+        </div>
+      </div>
+      <div class="phase-row">
+        <div class="phase-num">✓</div>
+        <div>
+          <div class="phase-title">Forged In Motion</div>
+          <p class="phase-body">A plan built around your specific lift, sport, or activity from day one. Focused 1:1 sessions, no filler, no dependency, no leaving until you actually have a plan you trust.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="solution">
+  <div class="container">
+    <div class="solution-header">
+      <p class="section-eyebrow">The Solution</p>
+      <h2 class="section-h2">The Stay In The<br>Fight System<span style="color:var(--orange)">™</span></h2>
+      <p class="section-sub">A premium physical therapy experience built around one outcome: getting you back to the specific things you love doing, as directly as possible.</p>
+    </div>
+    <div class="phase-list">
+      <div class="phase-row">
+        <div class="phase-num">01</div>
+        <div>
+          <div class="phase-title">Clarity</div>
+          <p class="phase-body">Understand exactly what's going on and why — specific to your body and your sport, not a generic diagnosis.</p>
+        </div>
+      </div>
+      <div class="phase-row">
+        <div class="phase-num">02</div>
+        <div>
+          <div class="phase-title">Confidence</div>
+          <p class="phase-body">Know exactly what's safe to keep doing and what to build toward, so fear stops being the thing holding you back.</p>
+        </div>
+      </div>
+      <div class="phase-row">
+        <div class="phase-num">03</div>
+        <div>
+          <div class="phase-title">Capability</div>
+          <p class="phase-body">Rebuild strength and capacity through a plan built around your goals: the lift, the run, the sport. Not a one-size-fits-all protocol.</p>
+        </div>
+      </div>
+      <div class="phase-row">
+        <div class="phase-num">04</div>
+        <div>
+          <div class="phase-title">Freedom</div>
+          <p class="phase-body">Get back to doing what you love, fully — without hesitation, and without wondering if you're allowed to push yet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="section-eyebrow">About Nathan</p>
+        <h2 class="section-h2">Built by someone<br>who <span style="color:var(--orange)">lives it.</span></h2>
+        <p>At 29 years old I was a licensed physical therapist who wore a wrist brace to pick up my own daughters. For 8 months I taped my wrists twice a day just to treat patients. None of the conventional approach was working.</p>
+        <p>Since then I've dealt with shoulder pain that made it impossible to throw a football. Now it's a non-issue. I've gone through months of knee pain while squatting, tied to a right hip mobility issue that took real work to sort out. Different injuries, same pattern.</p>
+        <p>Here's the thing nobody tells you: you will deal with pain and setbacks. That's not a maybe. The only real question is whether you let it scare you into stopping, or you learn how to keep doing what you love anyway. That's what I build every plan around.</p>
+      </div>
+      <div class="credential-list">
+        <div class="credential"><span class="credential-mark">—</span><span>Doctor of Physical Therapy, licensed in Tennessee</span></div>
+        <div class="credential"><span class="credential-mark">—</span><span>Former athlete, still training toward his own strength and performance goals</span></div>
+        <div class="credential"><span class="credential-mark">—</span><span>Evidence-based care — no gimmicks, no unnecessary passive treatment</span></div>
+        <div class="credential"><span class="credential-mark">—</span><span>Personally rebuilt from chronic wrist, shoulder, and knee/hip issues — no surgery, no injections</span></div>
+        <div class="credential"><span class="credential-mark">—</span><span>PT Compact eligible for telehealth across member states</span></div>
+        <div class="credential"><span class="credential-mark">—</span><span>Husband, father, and lifelong athlete who trains daily</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="philosophy">
+  <div class="container">
+    <p class="section-eyebrow">Philosophy</p>
+    <h2>Stay In The Fight.</h2>
+    <div class="philosophy-lines">
+      <p>Pain isn't the enemy. Fear and uncertainty are.</p>
+      <p>The goal isn't endless treatment. The goal is confidence and independence, and getting back to the life you refuse to give up.</p>
+      <p>We don't create lifelong patients. We create capable people.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="guarantee">
+  <div class="container">
+    <p class="section-eyebrow">The Promise</p>
+    <h2 class="section-h2">We replace uncertainty<br>with <span style="color:var(--orange)">clarity.</span></h2>
+    <div class="guarantee-box">
+      <p>Do the work. Follow the plan. Show up to the process. If you don't feel real progress in clarity and confidence by the end of your first phase, we'll make it right.</p>
+      <p>This is built to be the last thing you need, not one more thing you tried.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="cta-section">
+  <div class="container">
+    <p class="section-eyebrow">Ready to Get Back to It</p>
+    <h2 class="section-h2">Go bench. Go throw.<br>Go <span style="color:var(--orange)">live your life.</span></h2>
+    <p class="section-sub">Book a free Clarity Call. 30 minutes. No pitch. Just a real conversation about what you're missing and how to get back to it.</p>
+    <div class="cta-buttons">
+      <a href="https://calendly.com/nathanappleby/pain-strategy-call" target="_blank" class="btn-primary">Book Your Free Call</a>
+      <span class="btn-note">1:1 Physical Therapy · Licensed DPT · Cash-Pay · Telehealth Available</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">FORGED IN MOTION<span>.</span></div>
+  <div class="footer-tag">Stay In The Fight.</div>
+  <div class="footer-links">
+    <a href="https://x.com/NathanApplebyPT" target="_blank">X / Twitter</a>
+    <a href="https://calendly.com/nathanappleby/pain-strategy-call" target="_blank">Book a Call</a>
+  </div>
+  <p class="footer-legal">© 2026 Forged In Motion, PLLC · Nashville, TN · Forged In Motion, PLLC is a physical therapy practice. Nathan Appleby, PT, DPT is a licensed physical therapist. Services offered in-person and via telehealth where authorized. Results vary by individual.</p>
+</footer>
+
+</body>
+</html>

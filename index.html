@@ -35,14 +35,17 @@ section{padding:130px 6%}
 .hero{padding-top:170px;padding-bottom:140px;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at top right,rgba(192,88,32,0.06) 0%,transparent 55%);pointer-events:none}
 .hero-eyebrow{font-size:0.72rem;font-weight:600;color:var(--orange);letter-spacing:5px;text-transform:uppercase;margin-bottom:28px}
-.hero-headline{font-family:'Bebas Neue',sans-serif;font-size:clamp(3.5rem,9vw,8rem);line-height:0.94;color:var(--white);margin-bottom:36px;max-width:900px}
+.hero-headline{font-family:'Bebas Neue',sans-serif;font-size:clamp(3.5rem,9vw,8rem);line-height:0.94;color:var(--white);margin-bottom:20px;max-width:900px}
 .hero-headline span{color:var(--orange)}
+.hero-subline{font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.3rem,2.5vw,1.8rem);font-weight:700;color:var(--orange);margin-bottom:28px;text-transform:uppercase;letter-spacing:0.5px}
 .hero-sub{font-size:clamp(1.05rem,1.8vw,1.3rem);color:var(--light-gray);max-width:620px;margin-bottom:56px;font-weight:300;line-height:1.7}
 .hero-sub strong{color:var(--white);font-weight:600}
 .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:24px}
 .btn-primary{display:inline-block;background:var(--orange);color:#FFFFFF;font-family:'Barlow',sans-serif;font-weight:600;font-size:0.85rem;letter-spacing:2px;text-transform:uppercase;padding:19px 40px;text-decoration:none;transition:background 0.2s}
 .btn-primary:hover{background:var(--orange-light)}
 .divider{height:1px;background:var(--border);margin:0 6%}
+.statement{padding:80px 6% 130px;text-align:center}
+.statement p{font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.5rem,3.2vw,2.4rem);font-weight:600;color:var(--white);max-width:800px;margin:0 auto;line-height:1.35}
 .section-eyebrow{font-size:0.72rem;font-weight:600;color:var(--orange);letter-spacing:5px;text-transform:uppercase;margin-bottom:24px}
 .section-h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.3rem,4.5vw,4.2rem);color:var(--white);line-height:1.02;margin-bottom:28px}
 .section-h2 span{color:var(--orange)}
@@ -62,6 +65,11 @@ section{padding:130px 6%}
 .phase-title{font-family:'Barlow Condensed',sans-serif;font-size:1.5rem;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
 .phase-body{font-size:1.02rem;color:var(--light-gray);line-height:1.75;font-weight:300;max-width:600px}
 .about{background:var(--dark)}
+.offer-flow{display:flex;flex-direction:column;align-items:center;gap:0;max-width:520px;margin:0 auto}
+.offer-step{width:100%;border:1px solid var(--border);background:var(--card);padding:32px 36px;text-align:center}
+.offer-step-title{font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.offer-step-body{font-size:0.95rem;color:var(--light-gray);font-weight:300;line-height:1.6}
+.offer-arrow{color:var(--orange);font-size:1.5rem;padding:10px 0;line-height:1}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:start}
 .about-text p{font-size:1.08rem;color:var(--light-gray);line-height:1.85;margin-bottom:22px;font-weight:300}
 .credential-list{display:flex;flex-direction:column;gap:0}
@@ -103,7 +111,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:56px 6%
   <div class="nav-inner">
     <a href="#" class="nav-logo">FORGED IN <span>MOTION</span></a>
     <span class="nav-tag">Stay In The Fight</span>
-    <a href="https://calendly.com/nathanappleby/pain-strategy-call" target="_blank" class="nav-cta">Book Free Call</a>
+    <a href="https://calendly.com/nathanappleby/pain-strategy-call" target="_blank" class="nav-cta">Request an Assessment</a>
   </div>
 </nav>
 
@@ -111,10 +119,17 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:56px 6%
   <div class="container">
     <p class="hero-eyebrow">Premium Cash-Pay Physical Therapy · In-Person &amp; Telehealth</p>
     <h1 class="hero-headline">Stay In<br>The <span>Fight.</span></h1>
-    <p class="hero-sub">Helping driven people return to the active life they love through premium one-on-one physical therapy. We don't just treat pain. We get you back to benching heavy, running trails, and living the life you refuse to give up.</p>
+    <p class="hero-subline">Get back to the life you refuse to give up.</p>
+    <p class="hero-sub">Helping driven people return to lifting, running, sports, and parenthood through premium one-on-one physical therapy.</p>
     <div class="hero-actions">
-      <a href="https://calendly.com/nathanappleby/pain-strategy-call" target="_blank" class="btn-primary">Book a Free Clarity Call</a>
+      <a href="https://calendly.com/nathanappleby/pain-strategy-call" target="_blank" class="btn-primary">Request an Assessment</a>
     </div>
+  </div>
+</section>
+
+<section class="statement">
+  <div class="container">
+    <p>You shouldn't have to stop doing what you love just because something hurts. That's Forged In Motion.</p>
   </div>
 </section>
 
@@ -126,9 +141,8 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:56px 6%
       <div class="problem-text">
         <p class="section-eyebrow">The Problem</p>
         <h2 class="section-h2">It was never really<br>about the <span>pain.</span></h2>
-        <p>You didn't come to physical therapy because your shoulder hurts. You came because you can't bench press. Because you can't get through a run without it flaring up. Because you had to sit out of the game with your kid instead of throwing the ball around.</p>
-        <p>Pain is just the symptom. <strong>What it's actually costing you is the thing you love doing.</strong> That's the problem worth solving — and most treatment plans never even address it.</p>
-        <p>Pain often creates more uncertainty and fear than it does actual physical limitation. Once that fear is gone, most people are far more capable than they think.</p>
+        <p>You didn't come in because your shoulder hurts. You came in because you can't bench, can't finish a run, can't play with your kid without it flaring up.</p>
+        <p>Pain is just the symptom. <strong>What it's actually costing you is the thing you love doing</strong>, and most treatment plans never even address that.</p>
       </div>
       <div class="problem-quote">
         <p>"Nobody comes to me because they want to 'get out of pain.' They come because they want back to their sport, their gym, their kids. I build every plan around that — not around the injury in isolation."</p>
@@ -144,15 +158,15 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:56px 6%
   <div class="container">
     <div class="solution-header">
       <p class="section-eyebrow">Why This Is Different</p>
-      <h2 class="section-h2">This isn't traditional<br>physical <span>therapy.</span></h2>
-      <p class="section-sub">Traditional PT is built around the clinic's schedule and a generic protocol. This is built around getting you back to your sport, as fast as it's actually safe to do it.</p>
+      <h2 class="section-h2">Physical therapy can<br>be so much <span>more.</span></h2>
+      <p class="section-sub">More than a generic exercise sheet. More than six weeks of appointments on someone else's schedule. Built around getting you back to your sport, as fast as it's actually safe to do it.</p>
     </div>
     <div class="phase-list">
       <div class="phase-row">
         <div class="phase-num">×</div>
         <div>
-          <div class="phase-title">Traditional PT</div>
-          <p class="phase-body">"Rest it and see how it feels." Generic exercise handouts that have nothing to do with your sport. Twice a week for six to eight weeks, whether you need it or not.</p>
+          <div class="phase-title">The Generic Approach</div>
+          <p class="phase-body">"Rest it and see how it feels." Exercise handouts that have nothing to do with your sport. Twice a week for six to eight weeks, whether you need it or not.</p>
         </div>
       </div>
       <div class="phase-row">
@@ -210,23 +224,55 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:56px 6%
 
 <div class="divider"></div>
 
+<section class="offer">
+  <div class="container">
+    <div class="solution-header" style="text-align:center;margin-left:auto;margin-right:auto">
+      <p class="section-eyebrow">The Offer</p>
+      <h2 class="section-h2">What working together<br>looks <span>like.</span></h2>
+    </div>
+    <div class="offer-flow">
+      <div class="offer-step">
+        <div class="offer-step-title">Comprehensive Assessment</div>
+        <p class="offer-step-body">A full picture of what's going on, specific to your body and your sport.</p>
+      </div>
+      <div class="offer-arrow">↓</div>
+      <div class="offer-step">
+        <div class="offer-step-title">Your Stay In The Fight Roadmap™</div>
+        <p class="offer-step-body">A clear, personalized plan for how you get back to full capability.</p>
+      </div>
+      <div class="offer-arrow">↓</div>
+      <div class="offer-step">
+        <div class="offer-step-title">Guided Return to Performance</div>
+        <p class="offer-step-body">Hands-on, 1:1 sessions rebuilding strength and capacity through the plan.</p>
+      </div>
+      <div class="offer-arrow">↓</div>
+      <div class="offer-step">
+        <div class="offer-step-title">Independent Again</div>
+        <p class="offer-step-body">Back to lifting, competing, and living, with a plan you understand and trust.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <section class="about">
   <div class="container">
     <div class="about-grid">
       <div class="about-text">
         <p class="section-eyebrow">About Nathan</p>
         <h2 class="section-h2">Built by someone<br>who <span style="color:var(--orange)">lives it.</span></h2>
-        <p>At 29 years old I was a licensed physical therapist who wore a wrist brace to pick up my own daughters. For 8 months I taped my wrists twice a day just to treat patients. None of the conventional approach was working.</p>
-        <p>Since then I've dealt with shoulder pain that made it impossible to throw a football. Now it's a non-issue. I've gone through months of knee pain while squatting, tied to a right hip mobility issue that took real work to sort out. Different injuries, same pattern.</p>
-        <p>Here's the thing nobody tells you: you will deal with pain and setbacks. That's not a maybe. The only real question is whether you let it scare you into stopping, or you learn how to keep doing what you love anyway. That's what I build every plan around.</p>
+        <p>Husband. Father. Doctor of Physical Therapy. Former athlete still chasing his own strength and performance goals, refusing to let age dictate what he's capable of.</p>
+        <p>I've also lived the other side of it: a wrist brace to pick up my own daughters, shoulder pain that made it impossible to throw a football, months of knee pain from a right hip mobility issue. Different injuries, same pattern.</p>
+        <p>Here's the thing nobody tells you: you will deal with pain and setbacks. The only real question is whether you let it scare you into stopping, or you learn how to keep doing what you love anyway. That's what I build every plan around.</p>
       </div>
       <div class="credential-list">
+        <div class="credential"><span class="credential-mark">—</span><span>Husband, father, and lifelong athlete who trains daily</span></div>
         <div class="credential"><span class="credential-mark">—</span><span>Doctor of Physical Therapy, licensed in Tennessee</span></div>
         <div class="credential"><span class="credential-mark">—</span><span>Former athlete, still training toward his own strength and performance goals</span></div>
         <div class="credential"><span class="credential-mark">—</span><span>Evidence-based care — no gimmicks, no unnecessary passive treatment</span></div>
         <div class="credential"><span class="credential-mark">—</span><span>Personally rebuilt from chronic wrist, shoulder, and knee/hip issues — no surgery, no injections</span></div>
         <div class="credential"><span class="credential-mark">—</span><span>PT Compact eligible for telehealth across member states</span></div>
-        <div class="credential"><span class="credential-mark">—</span><span>Husband, father, and lifelong athlete who trains daily</span></div>
       </div>
     </div>
   </div>
@@ -253,7 +299,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:56px 6%
     <p class="section-eyebrow">The Promise</p>
     <h2 class="section-h2">We replace uncertainty<br>with <span style="color:var(--orange)">clarity.</span></h2>
     <div class="guarantee-box">
-      <p>Do the work. Follow the plan. Show up to the process. If you don't feel real progress in clarity and confidence by the end of your first phase, we'll make it right.</p>
+      <p>You'll leave every session knowing exactly what's going on, exactly what's safe to push, and exactly what comes next. No guesswork, no generic handouts.</p>
       <p>This is built to be the last thing you need, not one more thing you tried.</p>
     </div>
   </div>
@@ -265,9 +311,9 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:56px 6%
   <div class="container">
     <p class="section-eyebrow">Ready to Get Back to It</p>
     <h2 class="section-h2">Go bench. Go throw.<br>Go <span style="color:var(--orange)">live your life.</span></h2>
-    <p class="section-sub">Book a free Clarity Call. 30 minutes. No pitch. Just a real conversation about what you're missing and how to get back to it.</p>
+    <p class="section-sub">Request an assessment. 30 minutes. No pitch. Just a real conversation about what you're missing and how to get back to it.</p>
     <div class="cta-buttons">
-      <a href="https://calendly.com/nathanappleby/pain-strategy-call" target="_blank" class="btn-primary">Book Your Free Call</a>
+      <a href="https://calendly.com/nathanappleby/pain-strategy-call" target="_blank" class="btn-primary">Request an Assessment</a>
       <span class="btn-note">1:1 Physical Therapy · Licensed DPT · Cash-Pay · Telehealth Available</span>
     </div>
   </div>

@@ -70,8 +70,10 @@ section{padding:100px 6%}
 .pillar-body{font-size:0.95rem;color:var(--light-gray);font-weight:300;line-height:1.65}
 .proof{background:var(--dark)}
 .proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.proof-card{background:var(--card);border:1px solid var(--border);padding:26px;display:flex;flex-direction:column;gap:14px}
-.proof-photo{width:100%;aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#EFEBE1,#EFEBE1 10px,#E5E1D8 10px,#E5E1D8 20px);display:flex;align-items:center;justify-content:center;font-size:0.68rem;color:var(--gray);letter-spacing:1px;text-transform:uppercase;text-align:center;padding:10px}
+.proof-card{background:var(--card);border:1px solid var(--border);padding:26px;display:flex;flex-direction:column;gap:14px;text-decoration:none;color:inherit}
+.proof-photo{width:100%;aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#EFEBE1,#EFEBE1 10px,#E5E1D8 10px,#E5E1D8 20px);display:flex;align-items:center;justify-content:center;font-size:0.68rem;color:var(--gray);letter-spacing:1px;text-transform:uppercase;text-align:center;padding:10px;position:relative;background-size:cover;background-position:center}
+.proof-play{width:56px;height:56px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;opacity:0.95}
+.proof-play::after{content:'';width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:16px solid #fff;margin-left:4px}
 .proof-name{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:0.5px}
 .proof-quote{font-size:0.92rem;color:var(--light-gray);font-weight:300;line-height:1.6;font-style:italic}
 .proof-note{max-width:680px;margin:44px auto 0;text-align:center;font-size:0.85rem;color:var(--gray);border:1px dashed var(--border);padding:20px 26px}
@@ -199,11 +201,13 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:56px 6
       <h2 class="section-h2">Busy professionals who<br>got their <span>life back.</span></h2>
     </div>
     <div class="proof-grid">
-      <div class="proof-card">
-        <div class="proof-photo">[ Client photo ]</div>
-        <div class="proof-name">[ Name, Title/Role ]</div>
-        <div class="proof-quote">"[ Real result / quote goes here ]"</div>
-      </div>
+      <a class="proof-card" href="https://www.youtube.com/watch?v=6KGqbeMXIkE" target="_blank" rel="noopener">
+        <div class="proof-photo" style="background-image:url('https://img.youtube.com/vi/6KGqbeMXIkE/hqdefault.jpg')">
+          <div class="proof-play"></div>
+        </div>
+        <div class="proof-name">Tim Lee</div>
+        <div class="proof-quote">"Breaking the grip of back pain after decades of pain, surgeries, and a pain blocker."</div>
+      </a>
       <div class="proof-card">
         <div class="proof-photo">[ Client photo ]</div>
         <div class="proof-name">[ Name, Title/Role ]</div>
@@ -215,7 +219,7 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:56px 6
         <div class="proof-quote">"[ Real result / quote goes here ]"</div>
       </div>
     </div>
-    <p class="proof-note">Placeholder cards. Send me the real names, roles, results, and quotes (and photos if you have them) and I'll drop them straight in. I won't publish anything here that isn't from an actual client.</p>
+    <p class="proof-note">Two placeholder cards left. Send me the names, results, and a video link or photo for each and I'll drop them straight in.</p>
   </div>
 </section>
 

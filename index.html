@@ -35,7 +35,7 @@ section{padding:100px 6%}
 .hero{padding-top:160px;padding-bottom:80px;position:relative;overflow:hidden;text-align:center}
 .hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(ellipse at top,rgba(192,88,32,0.07) 0%,transparent 55%);pointer-events:none}
 .hero-inner{max-width:840px;margin:0 auto;position:relative}
-.hero-eyebrow{font-size:1.05rem;font-weight:600;color:var(--orange);letter-spacing:3px;text-transform:uppercase;margin-bottom:26px}
+.hero-eyebrow{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,6.5vw,5.2rem);line-height:1.02;color:var(--orange);letter-spacing:1px;text-transform:uppercase;margin-bottom:20px}
 .hero-headline{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.6rem,6.5vw,5.2rem);line-height:1.02;color:var(--white);margin-bottom:26px}
 .hero-headline .accent{color:var(--orange)}
 .hero-sub{font-size:clamp(1.05rem,1.8vw,1.25rem);color:var(--light-gray);max-width:640px;margin:0 auto 44px;font-weight:300;line-height:1.75}
@@ -77,6 +77,9 @@ section{padding:100px 6%}
 .proof-name{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:0.5px}
 .proof-quote{font-size:0.92rem;color:var(--light-gray);font-weight:300;line-height:1.6;font-style:italic}
 .proof-note{max-width:680px;margin:44px auto 0;text-align:center;font-size:0.85rem;color:var(--gray);border:1px dashed var(--border);padding:20px 26px}
+.wall-grid{column-count:3;column-gap:20px}
+.wall-item{break-inside:avoid;margin-bottom:20px;border:1px solid var(--border);overflow:hidden;background:var(--card)}
+.wall-item img{display:block;width:100%;height:auto}
 .offer-flow{display:flex;flex-direction:column;align-items:center;gap:0;max-width:520px;margin:0 auto}
 .offer-step{width:100%;border:1px solid var(--border);background:var(--card);padding:28px 34px;text-align:center}
 .offer-step-title{font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
@@ -103,9 +106,11 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:56px 6
   section{padding:70px 6%}
   .qualify-grid,.pillar-grid{grid-template-columns:1fr}
   .proof-grid{grid-template-columns:1fr 1fr}
+  .wall-grid{column-count:2}
 }
 @media(max-width:520px){
   .proof-grid{grid-template-columns:1fr}
+  .wall-grid{column-count:1}
 }
 </style>
 </head>
@@ -208,18 +213,40 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:56px 6
         <div class="proof-name">Tim Lee</div>
         <div class="proof-quote">"Breaking the grip of back pain after decades of pain, surgeries, and a pain blocker."</div>
       </a>
-      <div class="proof-card">
-        <div class="proof-photo">[ Client photo ]</div>
-        <div class="proof-name">[ Name, Title/Role ]</div>
-        <div class="proof-quote">"[ Real result / quote goes here ]"</div>
-      </div>
+      <a class="proof-card" href="https://youtu.be/hxwYpHGyqPw" target="_blank" rel="noopener">
+        <div class="proof-photo" style="background-image:url('https://img.youtube.com/vi/hxwYpHGyqPw/hqdefault.jpg')">
+          <div class="proof-play"></div>
+        </div>
+        <div class="proof-name">Mike Purves</div>
+        <div class="proof-quote">"Couldn't bend over and touch his toes. Within minutes, he had more mobility than ever before."</div>
+      </a>
       <div class="proof-card">
         <div class="proof-photo">[ Client photo ]</div>
         <div class="proof-name">[ Name, Title/Role ]</div>
         <div class="proof-quote">"[ Real result / quote goes here ]"</div>
       </div>
     </div>
-    <p class="proof-note">Two placeholder cards left. Send me the names, results, and a video link or photo for each and I'll drop them straight in.</p>
+    <p class="proof-note">One placeholder card left. Send me the name, result, and a video link or photo and I'll drop it straight in.</p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="wall">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">What Clients Are Saying</p>
+      <h2 class="section-h2">Real Messages.<br><span>Real Results.</span></h2>
+    </div>
+    <div class="wall-grid">
+      <div class="wall-item"><img src="testimonial-1.jpg" width="700" height="1521" alt="Client testimonial screenshot" loading="lazy"></div>
+      <div class="wall-item"><img src="testimonial-2.jpg" width="700" height="1521" alt="Client testimonial screenshot" loading="lazy"></div>
+      <div class="wall-item"><img src="testimonial-3.jpg" width="700" height="280" alt="Client testimonial screenshot" loading="lazy"></div>
+      <div class="wall-item"><img src="testimonial-4.jpg" width="700" height="1521" alt="Client testimonial screenshot" loading="lazy"></div>
+      <div class="wall-item"><img src="testimonial-5.jpg" width="700" height="1521" alt="Client testimonial screenshot" loading="lazy"></div>
+      <div class="wall-item"><img src="testimonial-6.jpg" width="700" height="434" alt="Client testimonial screenshot" loading="lazy"></div>
+      <div class="wall-item"><img src="testimonial-7.jpg" width="700" height="431" alt="Client testimonial screenshot" loading="lazy"></div>
+    </div>
   </div>
 </section>
 

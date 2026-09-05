@@ -26,8 +26,8 @@ html{scroll-behavior:smooth}
 body{background:var(--black);color:var(--white);font-family:'Barlow',sans-serif;font-weight:400;line-height:1.7;overflow-x:hidden}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);padding:0 6%}
 .nav-inner{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
-.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--white);letter-spacing:2px;text-decoration:none}
-.nav-logo span{color:var(--orange)}
+.nav-logo{display:flex;align-items:center;text-decoration:none}
+.nav-logo img{height:30px;width:auto;display:block}
 .nav-cta{background:var(--orange);color:#FFFFFF;font-family:'Barlow',sans-serif;font-weight:600;font-size:0.76rem;letter-spacing:1.5px;text-transform:uppercase;padding:11px 20px;text-decoration:none;transition:background 0.2s;white-space:nowrap}
 .nav-cta:hover{background:var(--orange-light)}
 section{padding:100px 6%}
@@ -118,7 +118,7 @@ footer{background:var(--black);border-top:1px solid var(--border);padding:56px 6
 
 <nav>
   <div class="nav-inner">
-    <a href="#" class="nav-logo">FORGED IN <span>MOTION</span></a>
+    <a href="#" class="nav-logo"><img src="IMG_2917.png" alt="Forged In Motion"></a>
     <a href="https://calendly.com/nathanappleby-leadershipfitnessco/strategy-call" target="_blank" class="nav-cta">Apply for a Strategy Call</a>
   </div>
 </nav>
